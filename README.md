@@ -4,7 +4,7 @@
 
 ## ARCHITECTURE  
 
-<img src="" width="100%" >
+<img src="https://github.com/AgathEmmanuel/HDIOC/blob/dev/images/HDOICS-2022-04-30-0723-copy1-3x-bg-white.svg" width="100%" >
 
 ## OBJECTIVE  
 
@@ -38,7 +38,7 @@ HEALTH DATA INTELLIGENCE & OWNERSHIP CONSORTIUM (HDIOC) is a Consortium of Hospi
 A Dashboard will be created that can be used for the patients, doctors and health insurers to satisfy their requirements. App engine will be used to run this web app. The web app will be built using NodeJs. Hyperledger fabric blockchain which is a permissioned blockchain network will be used for creating the consortium of multiple hospitals. Each hospital that agrees on the terms and conditions of the consortium network are called as the “members”. They are required to set up their peers with appropriate cryptographic materials like Certificate authority for participating in the network. The entire process of adding a new hospital to the network will be streamlined via the web app. The patients, doctors and health insurers can separately register with the network via the web app by providing and verifying the necessary information. Once all the entities in the process are registered with the platform, the client application can broadcast the transaction request to the network. Endorser peers present in each member will check for the certificate details and validate the transaction. The peers sents the transaction approval or rejection response. The client sends approved transactions to the Orderer peer so that it gets properly ordered and included to the blockchain and forwards the transaction block to anchor nodes of different members in the network. Then Anchor nodes broadcast it to other peers inside the hospital and update their local ledger. Storing files like images, scan reports and other health related data of the users is handled by making use of cryptographic hash functions, so that the data can be stored off chain and a verifiable proof that the image or any specific file which was hashed at the time transaction was recorded on the blockchain can be linked to a url containing the hash which can be kept on chain. The hash that acts as a reference to the data will be used in further transactions. The medical records and other health related data uploaded by each hospital undergo the hashing process and hash in referenced and stored inside the blockchain. The data which could be images, Electronic Health Records, etc which will get stored in Cloud file storage. The Cloud Healthcare API provides an easy and standardised data exchange and storage between the healthcare applications and solutions. For further processing, analytics and other machine learning capabilities the output data will be processed upon by Dataproc and Datastream, and can be stored in Bigquery for scalable analytics and machine learning model training will be done with Vertex AI. Doctors will be able to get access to this to the analytics, inference and predictions from the machine learning models created on top of the patients data, thus allowing them to provide the most efficient medications and treatments for their patients based on the authorised and authenticated data provided by the patients. In the entire workflow the patients get to control and see the information regarding which all members possess their health related data and for what all purposes each member is using their data.  
 
 
-# APPLICATION  
+## APPLICATION  
 
 * Efficient medication and treatment can be provided by the doctors by making use of authenticated and authorised data available about the patient.  
 * The patient becomes aware about who has access to his related data and for what purposes it's being used and gets to choose who can access their data.  
@@ -46,7 +46,7 @@ A Dashboard will be created that can be used for the patients, doctors and healt
 * The Health Insurance gets processed seamlessly since the authenticated data by doctors and patients with proper records on the blockchain is available.  
 
 
-# PLANNING  
+## PLANNING  
 
 * A Dashboard will be created which provides a dashboard for patients, doctors and health
 * insurance providers and will be run on App Engine.
